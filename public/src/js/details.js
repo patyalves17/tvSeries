@@ -6,7 +6,7 @@ console.log(imdbID);
 let serie = null;
 
 
-fetch( `http://www.omdbapi.com/?apikey=XXXXX&i=${imdbID}&type=series`)
+fetch( `http://www.omdbapi.com/?apikey=XXX&i=${imdbID}&type=series`)
     .then(  (resp)  => resp.json())
     .then(  ( data ) => {
           console.log( 'Sent data', data );

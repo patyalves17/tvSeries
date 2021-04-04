@@ -105,7 +105,7 @@ createCars = (data) =>{
   }
 
   doSearch = (search) =>{
-    fetch( `http://www.omdbapi.com/?apikey=XXXXX&s=${search}&type=series`)
+    fetch( `http://www.omdbapi.com/?apikey=XXX&s=${search}&type=series`)
     .then(  (resp)  => resp.json())
     .then(  ( data ) => {
           console.log( 'Sent data', data );
